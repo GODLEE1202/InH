@@ -7,6 +7,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import org.bson.Document;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -18,16 +20,20 @@ public class controller {
 
 	public static void main(String[] args) {
 		//몽고 디비 연결
-				String MongoDB_IP = "localhost";	//IP
-				int MongoDB_PORT = 27017;			//DB포트
-				String DB_NAME = "newsDB"; 			//DB이름
+		String MongoDB_IP = "localhost";	//IP
+		int MongoDB_PORT = 27017;			//DB포트
+		String DB_NAME = "newsDB"; 			//DB이름
 						
-				//몽고 디비 연결
-				MongoClient mongoClient = new MongoClient(new ServerAddress(MongoDB_IP,MongoDB_PORT));
-				DB db = mongoClient.getDB(DB_NAME);					//DB 생성
-				DBCollection NewsCollection = db.getCollection("NEWSDATABASE"); //DB에 넣을 콜렉션 생성 
+		//몽고 디비 연결
+		MongoClient mongoClient = new MongoClient(new ServerAddress(MongoDB_IP,MongoDB_PORT));
+		DB db = mongoClient.getDB(DB_NAME);					//DB 생성
+		DBCollection NewsCollection = db.getCollection("NEWSDATABASE"); //DB에 넣을 콜렉션 생성 
 
-		NewsCollection.fin
+		//셀레니움 크롬 드라이버 설정		
+		System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+	
+		
 		
 		final int LIMIT = 4;
 		List<String> seedList = new ArrayList<>();

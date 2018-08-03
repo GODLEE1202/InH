@@ -5,5 +5,7 @@
 	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="D:/Linux/jsoup-1.11.3.jar"/>
 	<classpathentry kind="lib" path="D:/mongo-java-driver-3.7.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium-java-3.13.0/client-combined-3.13.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium-server-standalone-3.13.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
