@@ -13,7 +13,7 @@ import com.mongodb.Mongo;
 import com.mongodb.MongoException;
 import com.mongodb.util.JSON;
 
-public class InsertDocumentApp {
+public class EX_InsertDocumentApp {
 	 public static void main(String[] args) {
 
 		    try {
