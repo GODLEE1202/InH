@@ -2,7 +2,7 @@ package coding;
 
 import java.util.Scanner;
 
-public class code1924 {
+public class Code1924 {
 	public static void main(String[] args) {
 	
 		Scanner scan = new Scanner(System.in);

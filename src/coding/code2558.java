@@ -2,7 +2,7 @@ package coding;
 
 import java.util.Scanner;
 
-public class code2558 {
+public class Code2558 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
